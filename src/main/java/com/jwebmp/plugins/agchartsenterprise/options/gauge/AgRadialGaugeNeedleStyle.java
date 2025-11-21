@@ -16,7 +16,7 @@ public class AgRadialGaugeNeedleStyle<J extends AgRadialGaugeNeedleStyle<J>> ext
 
     public Boolean getEnabled() {return enabled;}
 
-    public J setEnabled(Boolean enabled)
+    public @org.jspecify.annotations.NonNull J setEnabled(Boolean enabled)
     {
         this.enabled = enabled;
         return (J) this;
@@ -24,7 +24,7 @@ public class AgRadialGaugeNeedleStyle<J extends AgRadialGaugeNeedleStyle<J>> ext
 
     public String getFill() {return fill;}
 
-    public J setFill(String fill)
+    public @org.jspecify.annotations.NonNull J setFill(String fill)
     {
         this.fill = fill;
         return (J) this;
@@ -32,7 +32,7 @@ public class AgRadialGaugeNeedleStyle<J extends AgRadialGaugeNeedleStyle<J>> ext
 
     public String getStroke() {return stroke;}
 
-    public J setStroke(String stroke)
+    public @org.jspecify.annotations.NonNull J setStroke(String stroke)
     {
         this.stroke = stroke;
         return (J) this;
@@ -40,7 +40,7 @@ public class AgRadialGaugeNeedleStyle<J extends AgRadialGaugeNeedleStyle<J>> ext
 
     public Integer getStrokeWidth() {return strokeWidth;}
 
-    public J setStrokeWidth(Integer strokeWidth)
+    public @org.jspecify.annotations.NonNull J setStrokeWidth(Integer strokeWidth)
     {
         this.strokeWidth = strokeWidth;
         return (J) this;

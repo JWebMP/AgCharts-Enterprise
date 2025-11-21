@@ -22,17 +22,17 @@ public class AgRadiusCategoryAxisOptions<J extends AgRadiusCategoryAxisOptions<J
     }
 
     public Double getInnerRadiusRatio() { return innerRadiusRatio; }
-    public J setInnerRadiusRatio(Double innerRadiusRatio) { this.innerRadiusRatio = innerRadiusRatio; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setInnerRadiusRatio(Double innerRadiusRatio) { this.innerRadiusRatio = innerRadiusRatio; return (J) this; }
 
     public Double getPaddingInner() { return paddingInner; }
-    public J setPaddingInner(Double paddingInner) { this.paddingInner = paddingInner; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setPaddingInner(Double paddingInner) { this.paddingInner = paddingInner; return (J) this; }
 
     public Double getGroupPaddingInner() { return groupPaddingInner; }
-    public J setGroupPaddingInner(Double groupPaddingInner) { this.groupPaddingInner = groupPaddingInner; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setGroupPaddingInner(Double groupPaddingInner) { this.groupPaddingInner = groupPaddingInner; return (J) this; }
 
     public Double getPaddingOuter() { return paddingOuter; }
-    public J setPaddingOuter(Double paddingOuter) { this.paddingOuter = paddingOuter; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setPaddingOuter(Double paddingOuter) { this.paddingOuter = paddingOuter; return (J) this; }
 
     public Integer getPositionAngle() { return positionAngle; }
-    public J setPositionAngle(Integer positionAngle) { this.positionAngle = positionAngle; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setPositionAngle(Integer positionAngle) { this.positionAngle = positionAngle; return (J) this; }
 }

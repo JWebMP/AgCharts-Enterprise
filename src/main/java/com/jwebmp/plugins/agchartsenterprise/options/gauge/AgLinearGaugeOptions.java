@@ -73,7 +73,7 @@ public class AgLinearGaugeOptions<J extends AgLinearGaugeOptions<J>> extends Jav
         return value;
     }
 
-    public J setValue(Number value)
+    public @org.jspecify.annotations.NonNull J setValue(Number value)
     {
         this.value = value;
         return (J) this;
@@ -84,19 +84,19 @@ public class AgLinearGaugeOptions<J extends AgLinearGaugeOptions<J>> extends Jav
         return theme;
     }
 
-    public J setTheme(AgChartTheme<?> theme)
+    public @org.jspecify.annotations.NonNull J setTheme(AgChartTheme<?> theme)
     {
         this.theme = theme;
         return (J) this;
     }
 
-    public J setTheme(String themeName)
+    public @org.jspecify.annotations.NonNull J setTheme(String themeName)
     {
         this.theme = themeName;
         return (J) this;
     }
 
-    public J setTheme(AgChartThemeName themeName)
+    public @org.jspecify.annotations.NonNull J setTheme(AgChartThemeName themeName)
     {
         this.theme = themeName != null ? themeName.toString() : null;
         return (J) this;
@@ -107,7 +107,7 @@ public class AgLinearGaugeOptions<J extends AgLinearGaugeOptions<J>> extends Jav
         return container;
     }
 
-    public J setContainer(Object container)
+    public @org.jspecify.annotations.NonNull J setContainer(Object container)
     {
         this.container = container;
         return (J) this;
@@ -118,7 +118,7 @@ public class AgLinearGaugeOptions<J extends AgLinearGaugeOptions<J>> extends Jav
         return width;
     }
 
-    public J setWidth(Integer width)
+    public @org.jspecify.annotations.NonNull J setWidth(Integer width)
     {
         this.width = width;
         return (J) this;
@@ -129,7 +129,7 @@ public class AgLinearGaugeOptions<J extends AgLinearGaugeOptions<J>> extends Jav
         return height;
     }
 
-    public J setHeight(Integer height)
+    public @org.jspecify.annotations.NonNull J setHeight(Integer height)
     {
         this.height = height;
         return (J) this;
@@ -140,7 +140,7 @@ public class AgLinearGaugeOptions<J extends AgLinearGaugeOptions<J>> extends Jav
         return minHeight;
     }
 
-    public J setMinHeight(Integer minHeight)
+    public @org.jspecify.annotations.NonNull J setMinHeight(Integer minHeight)
     {
         this.minHeight = minHeight;
         return (J) this;
@@ -151,7 +151,7 @@ public class AgLinearGaugeOptions<J extends AgLinearGaugeOptions<J>> extends Jav
         return minWidth;
     }
 
-    public J setMinWidth(Integer minWidth)
+    public @org.jspecify.annotations.NonNull J setMinWidth(Integer minWidth)
     {
         this.minWidth = minWidth;
         return (J) this;
@@ -162,7 +162,7 @@ public class AgLinearGaugeOptions<J extends AgLinearGaugeOptions<J>> extends Jav
         return padding;
     }
 
-    public J setPadding(Object padding)
+    public @org.jspecify.annotations.NonNull J setPadding(Object padding)
     {
         this.padding = padding;
         return (J) this;
@@ -173,7 +173,7 @@ public class AgLinearGaugeOptions<J extends AgLinearGaugeOptions<J>> extends Jav
         return background;
     }
 
-    public J setBackground(AgChartBackground<?> background)
+    public @org.jspecify.annotations.NonNull J setBackground(AgChartBackground<?> background)
     {
         this.background = background;
         return (J) this;
@@ -184,7 +184,7 @@ public class AgLinearGaugeOptions<J extends AgLinearGaugeOptions<J>> extends Jav
         return title;
     }
 
-    public J setTitle(AgChartCaptionOptions<?> title)
+    public @org.jspecify.annotations.NonNull J setTitle(AgChartCaptionOptions<?> title)
     {
         this.title = title;
         return (J) this;
@@ -195,7 +195,7 @@ public class AgLinearGaugeOptions<J extends AgLinearGaugeOptions<J>> extends Jav
         return subtitle;
     }
 
-    public J setSubtitle(AgChartCaptionOptions<?> subtitle)
+    public @org.jspecify.annotations.NonNull J setSubtitle(AgChartCaptionOptions<?> subtitle)
     {
         this.subtitle = subtitle;
         return (J) this;
@@ -206,7 +206,7 @@ public class AgLinearGaugeOptions<J extends AgLinearGaugeOptions<J>> extends Jav
         return footnote;
     }
 
-    public J setFootnote(AgChartCaptionOptions<?> footnote)
+    public @org.jspecify.annotations.NonNull J setFootnote(AgChartCaptionOptions<?> footnote)
     {
         this.footnote = footnote;
         return (J) this;
@@ -217,7 +217,7 @@ public class AgLinearGaugeOptions<J extends AgLinearGaugeOptions<J>> extends Jav
         return tooltip;
     }
 
-    public J setTooltip(AgChartTooltipOptions<?> tooltip)
+    public @org.jspecify.annotations.NonNull J setTooltip(AgChartTooltipOptions<?> tooltip)
     {
         this.tooltip = tooltip;
         return (J) this;
@@ -228,7 +228,7 @@ public class AgLinearGaugeOptions<J extends AgLinearGaugeOptions<J>> extends Jav
         return animation;
     }
 
-    public J setAnimation(Object animation)
+    public @org.jspecify.annotations.NonNull J setAnimation(Object animation)
     {
         this.animation = animation;
         return (J) this;
@@ -239,7 +239,7 @@ public class AgLinearGaugeOptions<J extends AgLinearGaugeOptions<J>> extends Jav
         return contextMenu;
     }
 
-    public J setContextMenu(Object contextMenu)
+    public @org.jspecify.annotations.NonNull J setContextMenu(Object contextMenu)
     {
         this.contextMenu = contextMenu;
         return (J) this;
@@ -250,7 +250,7 @@ public class AgLinearGaugeOptions<J extends AgLinearGaugeOptions<J>> extends Jav
         return context;
     }
 
-    public J setContext(Object context)
+    public @org.jspecify.annotations.NonNull J setContext(Object context)
     {
         this.context = context;
         return (J) this;
@@ -261,7 +261,7 @@ public class AgLinearGaugeOptions<J extends AgLinearGaugeOptions<J>> extends Jav
         return locale;
     }
 
-    public J setLocale(AgLocaleOptions<?> locale)
+    public @org.jspecify.annotations.NonNull J setLocale(AgLocaleOptions<?> locale)
     {
         this.locale = locale;
         return (J) this;
@@ -272,7 +272,7 @@ public class AgLinearGaugeOptions<J extends AgLinearGaugeOptions<J>> extends Jav
         return listeners;
     }
 
-    public J setListeners(Object listeners)
+    public @org.jspecify.annotations.NonNull J setListeners(Object listeners)
     {
         this.listeners = listeners;
         return (J) this;
@@ -283,7 +283,7 @@ public class AgLinearGaugeOptions<J extends AgLinearGaugeOptions<J>> extends Jav
         return direction;
     }
 
-    public J setDirection(String direction)
+    public @org.jspecify.annotations.NonNull J setDirection(String direction)
     {
         this.direction = direction;
         return (J) this;
@@ -294,7 +294,7 @@ public class AgLinearGaugeOptions<J extends AgLinearGaugeOptions<J>> extends Jav
         return thickness;
     }
 
-    public J setThickness(Integer thickness)
+    public @org.jspecify.annotations.NonNull J setThickness(Integer thickness)
     {
         this.thickness = thickness;
         return (J) this;
@@ -305,7 +305,7 @@ public class AgLinearGaugeOptions<J extends AgLinearGaugeOptions<J>> extends Jav
         return segmentation;
     }
 
-    public J setSegmentation(AgGaugeSegmentation<?> segmentation)
+    public @org.jspecify.annotations.NonNull J setSegmentation(AgGaugeSegmentation<?> segmentation)
     {
         this.segmentation = segmentation;
         return (J) this;
@@ -316,7 +316,7 @@ public class AgLinearGaugeOptions<J extends AgLinearGaugeOptions<J>> extends Jav
         return cornerRadius;
     }
 
-    public J setCornerRadius(Integer cornerRadius)
+    public @org.jspecify.annotations.NonNull J setCornerRadius(Integer cornerRadius)
     {
         this.cornerRadius = cornerRadius;
         return (J) this;
@@ -327,7 +327,7 @@ public class AgLinearGaugeOptions<J extends AgLinearGaugeOptions<J>> extends Jav
         return cornerMode;
     }
 
-    public J setCornerMode(AgGaugeCornerMode cornerMode)
+    public @org.jspecify.annotations.NonNull J setCornerMode(AgGaugeCornerMode cornerMode)
     {
         this.cornerMode = cornerMode;
         return (J) this;
@@ -338,7 +338,7 @@ public class AgLinearGaugeOptions<J extends AgLinearGaugeOptions<J>> extends Jav
         return scale;
     }
 
-    public J setScale(AgLinearGaugeScale<?> scale)
+    public @org.jspecify.annotations.NonNull J setScale(AgLinearGaugeScale<?> scale)
     {
         this.scale = scale;
         return (J) this;
@@ -349,7 +349,7 @@ public class AgLinearGaugeOptions<J extends AgLinearGaugeOptions<J>> extends Jav
         return bar;
     }
 
-    public J setBar(AgLinearGaugeBarStyle<?> bar)
+    public @org.jspecify.annotations.NonNull J setBar(AgLinearGaugeBarStyle<?> bar)
     {
         this.bar = bar;
         return (J) this;
@@ -360,7 +360,7 @@ public class AgLinearGaugeOptions<J extends AgLinearGaugeOptions<J>> extends Jav
         return label;
     }
 
-    public J setLabel(AgLinearGaugeLabelOptions<?> label)
+    public @org.jspecify.annotations.NonNull J setLabel(AgLinearGaugeLabelOptions<?> label)
     {
         this.label = label;
         return (J) this;
@@ -371,7 +371,7 @@ public class AgLinearGaugeOptions<J extends AgLinearGaugeOptions<J>> extends Jav
         return targets;
     }
 
-    public J setTargets(List<AgLinearGaugeTarget<?>> targets)
+    public @org.jspecify.annotations.NonNull J setTargets(List<AgLinearGaugeTarget<?>> targets)
     {
         this.targets = targets;
         return (J) this;
@@ -382,7 +382,7 @@ public class AgLinearGaugeOptions<J extends AgLinearGaugeOptions<J>> extends Jav
         return cursor;
     }
 
-    public J setCursor(String cursor)
+    public @org.jspecify.annotations.NonNull J setCursor(String cursor)
     {
         this.cursor = cursor;
         return (J) this;
@@ -393,7 +393,7 @@ public class AgLinearGaugeOptions<J extends AgLinearGaugeOptions<J>> extends Jav
         return highlight;
     }
 
-    public J setHighlight(Object highlight)
+    public @org.jspecify.annotations.NonNull J setHighlight(Object highlight)
     {
         this.highlight = highlight;
         return (J) this;
@@ -404,7 +404,7 @@ public class AgLinearGaugeOptions<J extends AgLinearGaugeOptions<J>> extends Jav
         return nodeClickRange;
     }
 
-    public J setNodeClickRange(Object nodeClickRange)
+    public @org.jspecify.annotations.NonNull J setNodeClickRange(Object nodeClickRange)
     {
         this.nodeClickRange = nodeClickRange;
         return (J) this;

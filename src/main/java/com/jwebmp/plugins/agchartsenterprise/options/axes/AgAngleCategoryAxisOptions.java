@@ -22,7 +22,7 @@ public class AgAngleCategoryAxisOptions<J extends AgAngleCategoryAxisOptions<J>>
 
     public Double getPaddingInner() {return paddingInner;}
 
-    public J setPaddingInner(Double paddingInner)
+    public @org.jspecify.annotations.NonNull J setPaddingInner(Double paddingInner)
     {
         this.paddingInner = paddingInner;
         return (J) this;
@@ -30,7 +30,7 @@ public class AgAngleCategoryAxisOptions<J extends AgAngleCategoryAxisOptions<J>>
 
     public Double getGroupPaddingInner() {return groupPaddingInner;}
 
-    public J setGroupPaddingInner(Double groupPaddingInner)
+    public @org.jspecify.annotations.NonNull J setGroupPaddingInner(Double groupPaddingInner)
     {
         this.groupPaddingInner = groupPaddingInner;
         return (J) this;
@@ -42,7 +42,7 @@ public class AgAngleCategoryAxisOptions<J extends AgAngleCategoryAxisOptions<J>>
         return label;
     }
 
-    public J setLabel(AgPolarAxisLabelOptions<?> label)
+    public @org.jspecify.annotations.NonNull J setLabel(AgPolarAxisLabelOptions<?> label)
     {
         this.label = label;
         return (J) this;

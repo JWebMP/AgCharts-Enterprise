@@ -14,7 +14,7 @@ public class AgGaugeColorStop<J extends AgGaugeColorStop<J>> extends JavaScriptP
 
     public String getColor() {return color;}
 
-    public J setColor(String color)
+    public @org.jspecify.annotations.NonNull J setColor(String color)
     {
         this.color = color;
         return (J) this;
@@ -22,7 +22,7 @@ public class AgGaugeColorStop<J extends AgGaugeColorStop<J>> extends JavaScriptP
 
     public Number getStop() {return stop;}
 
-    public J setStop(Number stop)
+    public @org.jspecify.annotations.NonNull J setStop(Number stop)
     {
         this.stop = stop;
         return (J) this;

@@ -16,11 +16,11 @@ public class AgLinearGaugeLabelOptions<J extends AgLinearGaugeLabelOptions<J>> e
     private Boolean avoidCollisions;
 
     public Boolean getEnabled() {return enabled;}
-    public J setEnabled(Boolean enabled) {this.enabled = enabled; return (J) this;}
+    public @org.jspecify.annotations.NonNull J setEnabled(Boolean enabled) {this.enabled = enabled; return (J) this;}
 
     public String getPlacement() {return placement;}
-    public J setPlacement(String placement) {this.placement = placement; return (J) this;}
+    public @org.jspecify.annotations.NonNull J setPlacement(String placement) {this.placement = placement; return (J) this;}
 
     public Boolean getAvoidCollisions() {return avoidCollisions;}
-    public J setAvoidCollisions(Boolean avoidCollisions) {this.avoidCollisions = avoidCollisions; return (J) this;}
+    public @org.jspecify.annotations.NonNull J setAvoidCollisions(Boolean avoidCollisions) {this.avoidCollisions = avoidCollisions; return (J) this;}
 }

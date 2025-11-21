@@ -88,7 +88,7 @@ public class AgRadialColumnSeriesOptions<J extends AgRadialColumnSeriesOptions<J
      * @param angleKey the field name in the data that contains angle categories
      * @return this instance for method chaining
      */
-    public J setAngleKey(String angleKey)
+    public @org.jspecify.annotations.NonNull J setAngleKey(String angleKey)
     {
         this.angleKey = angleKey;
         return (J) this;
@@ -114,7 +114,7 @@ public class AgRadialColumnSeriesOptions<J extends AgRadialColumnSeriesOptions<J
      * @param radiusKey the field name in the data that contains numeric values
      * @return this instance for method chaining
      */
-    public J setRadiusKey(String radiusKey)
+    public @org.jspecify.annotations.NonNull J setRadiusKey(String radiusKey)
     {
         this.radiusKey = radiusKey;
         return (J) this;
@@ -140,7 +140,7 @@ public class AgRadialColumnSeriesOptions<J extends AgRadialColumnSeriesOptions<J
      * @param angleName the human-readable name for the angle axis
      * @return this instance for method chaining
      */
-    public J setAngleName(String angleName)
+    public @org.jspecify.annotations.NonNull J setAngleName(String angleName)
     {
         this.angleName = angleName;
         return (J) this;
@@ -166,7 +166,7 @@ public class AgRadialColumnSeriesOptions<J extends AgRadialColumnSeriesOptions<J
      * @param radiusName the human-readable name for the radius axis
      * @return this instance for method chaining
      */
-    public J setRadiusName(String radiusName)
+    public @org.jspecify.annotations.NonNull J setRadiusName(String radiusName)
     {
         this.radiusName = radiusName;
         return (J) this;
@@ -191,7 +191,7 @@ public class AgRadialColumnSeriesOptions<J extends AgRadialColumnSeriesOptions<J
      * @param legendItemName the custom name to show in the legend
      * @return this instance for method chaining
      */
-    public J setLegendItemName(String legendItemName)
+    public @org.jspecify.annotations.NonNull J setLegendItemName(String legendItemName)
     {
         this.legendItemName = legendItemName;
         return (J) this;
@@ -218,7 +218,7 @@ public class AgRadialColumnSeriesOptions<J extends AgRadialColumnSeriesOptions<J
      * @param id the unique identifier for this series
      * @return this instance for method chaining
      */
-    public J setId(String id)
+    public @org.jspecify.annotations.NonNull J setId(String id)
     {
         this.id = id;
         setSeriesId(id);
@@ -246,7 +246,7 @@ public class AgRadialColumnSeriesOptions<J extends AgRadialColumnSeriesOptions<J
      * @param data the array of data objects where each object contains angle and radius properties
      * @return this instance for method chaining
      */
-    public J setData(List<?> data)
+    public @org.jspecify.annotations.NonNull J setData(List<?> data)
     {
         this.data = data;
         return (J) this;
@@ -273,7 +273,7 @@ public class AgRadialColumnSeriesOptions<J extends AgRadialColumnSeriesOptions<J
      * @param visible true to show the series, false to hide it, null for default (visible)
      * @return this instance for method chaining
      */
-    public J setVisible(Boolean visible)
+    public @org.jspecify.annotations.NonNull J setVisible(Boolean visible)
     {
         this.visible = visible;
         return (J) this;
@@ -300,7 +300,7 @@ public class AgRadialColumnSeriesOptions<J extends AgRadialColumnSeriesOptions<J
      * @param cursor the CSS cursor name (e.g., 'pointer', 'crosshair', 'grab')
      * @return this instance for method chaining
      */
-    public J setCursor(String cursor)
+    public @org.jspecify.annotations.NonNull J setCursor(String cursor)
     {
         this.cursor = cursor;
         return (J) this;
@@ -327,7 +327,7 @@ public class AgRadialColumnSeriesOptions<J extends AgRadialColumnSeriesOptions<J
      * @param context the context object to be passed to callbacks
      * @return this instance for method chaining
      */
-    public J setContext(Object context)
+    public @org.jspecify.annotations.NonNull J setContext(Object context)
     {
         this.context = context;
         return (J) this;
@@ -354,7 +354,7 @@ public class AgRadialColumnSeriesOptions<J extends AgRadialColumnSeriesOptions<J
      * @param range the click detection range as CSS distance (e.g., "5px", "10%")
      * @return this instance for method chaining
      */
-    public J setNodeClickRange(String range)
+    public @org.jspecify.annotations.NonNull J setNodeClickRange(String range)
     {
         this.nodeClickRange = range;
         return (J) this;
@@ -369,7 +369,7 @@ public class AgRadialColumnSeriesOptions<J extends AgRadialColumnSeriesOptions<J
      * @param pixels the click detection range in pixels
      * @return this instance for method chaining
      */
-    public J setNodeClickRange(Integer pixels)
+    public @org.jspecify.annotations.NonNull J setNodeClickRange(Integer pixels)
     {
         this.nodeClickRange = pixels;
         return (J) this;
@@ -386,7 +386,7 @@ public class AgRadialColumnSeriesOptions<J extends AgRadialColumnSeriesOptions<J
      */
     public Boolean getShowInLegend() {return showInLegend;}
 
-    public J setShowInLegend(Boolean showInLegend)
+    public @org.jspecify.annotations.NonNull J setShowInLegend(Boolean showInLegend)
     {
         this.showInLegend = showInLegend;
         return (J) this;
@@ -394,7 +394,7 @@ public class AgRadialColumnSeriesOptions<J extends AgRadialColumnSeriesOptions<J
 
     public AgSeriesListeners<?> getListeners() {return listeners;}
 
-    public J setListeners(AgSeriesListeners<?> listeners)
+    public @org.jspecify.annotations.NonNull J setListeners(AgSeriesListeners<?> listeners)
     {
         this.listeners = listeners;
         return (J) this;
@@ -402,7 +402,7 @@ public class AgRadialColumnSeriesOptions<J extends AgRadialColumnSeriesOptions<J
 
     public Boolean getGrouped() {return grouped;}
 
-    public J setGrouped(Boolean grouped)
+    public @org.jspecify.annotations.NonNull J setGrouped(Boolean grouped)
     {
         this.grouped = grouped;
         return (J) this;
@@ -410,7 +410,7 @@ public class AgRadialColumnSeriesOptions<J extends AgRadialColumnSeriesOptions<J
 
     public Boolean getStacked() {return stacked;}
 
-    public J setStacked(Boolean stacked)
+    public @org.jspecify.annotations.NonNull J setStacked(Boolean stacked)
     {
         this.stacked = stacked;
         return (J) this;
@@ -418,7 +418,7 @@ public class AgRadialColumnSeriesOptions<J extends AgRadialColumnSeriesOptions<J
 
     public String getStackGroup() {return stackGroup;}
 
-    public J setStackGroup(String stackGroup)
+    public @org.jspecify.annotations.NonNull J setStackGroup(String stackGroup)
     {
         this.stackGroup = stackGroup;
         return (J) this;
@@ -426,7 +426,7 @@ public class AgRadialColumnSeriesOptions<J extends AgRadialColumnSeriesOptions<J
 
     public Number getNormalizedTo() {return normalizedTo;}
 
-    public J setNormalizedTo(Number normalizedTo)
+    public @org.jspecify.annotations.NonNull J setNormalizedTo(Number normalizedTo)
     {
         this.normalizedTo = normalizedTo;
         return (J) this;
@@ -434,7 +434,7 @@ public class AgRadialColumnSeriesOptions<J extends AgRadialColumnSeriesOptions<J
 
     public Double getColumnWidthRatio() {return columnWidthRatio;}
 
-    public J setColumnWidthRatio(Double columnWidthRatio)
+    public @org.jspecify.annotations.NonNull J setColumnWidthRatio(Double columnWidthRatio)
     {
         this.columnWidthRatio = columnWidthRatio;
         return (J) this;
@@ -442,7 +442,7 @@ public class AgRadialColumnSeriesOptions<J extends AgRadialColumnSeriesOptions<J
 
     public Double getMaxColumnWidthRatio() {return maxColumnWidthRatio;}
 
-    public J setMaxColumnWidthRatio(Double maxColumnWidthRatio)
+    public @org.jspecify.annotations.NonNull J setMaxColumnWidthRatio(Double maxColumnWidthRatio)
     {
         this.maxColumnWidthRatio = maxColumnWidthRatio;
         return (J) this;
@@ -450,7 +450,7 @@ public class AgRadialColumnSeriesOptions<J extends AgRadialColumnSeriesOptions<J
 
     public Integer getCornerRadius() {return cornerRadius;}
 
-    public J setCornerRadius(Integer cornerRadius)
+    public @org.jspecify.annotations.NonNull J setCornerRadius(Integer cornerRadius)
     {
         this.cornerRadius = cornerRadius;
         return (J) this;
@@ -458,7 +458,7 @@ public class AgRadialColumnSeriesOptions<J extends AgRadialColumnSeriesOptions<J
 
     public Double getFillOpacity() {return fillOpacity;}
 
-    public J setFillOpacity(Double fillOpacity)
+    public @org.jspecify.annotations.NonNull J setFillOpacity(Double fillOpacity)
     {
         this.fillOpacity = fillOpacity;
         return (J) this;
@@ -466,7 +466,7 @@ public class AgRadialColumnSeriesOptions<J extends AgRadialColumnSeriesOptions<J
 
     public String getStroke() {return stroke;}
 
-    public J setStroke(String stroke)
+    public @org.jspecify.annotations.NonNull J setStroke(String stroke)
     {
         this.stroke = stroke;
         return (J) this;
@@ -474,7 +474,7 @@ public class AgRadialColumnSeriesOptions<J extends AgRadialColumnSeriesOptions<J
 
     public Integer getStrokeWidth() {return strokeWidth;}
 
-    public J setStrokeWidth(Integer strokeWidth)
+    public @org.jspecify.annotations.NonNull J setStrokeWidth(Integer strokeWidth)
     {
         this.strokeWidth = strokeWidth;
         return (J) this;
@@ -482,7 +482,7 @@ public class AgRadialColumnSeriesOptions<J extends AgRadialColumnSeriesOptions<J
 
     public Double getStrokeOpacity() {return strokeOpacity;}
 
-    public J setStrokeOpacity(Double strokeOpacity)
+    public @org.jspecify.annotations.NonNull J setStrokeOpacity(Double strokeOpacity)
     {
         this.strokeOpacity = strokeOpacity;
         return (J) this;
@@ -490,7 +490,7 @@ public class AgRadialColumnSeriesOptions<J extends AgRadialColumnSeriesOptions<J
 
     public List<Integer> getLineDash() {return lineDash;}
 
-    public J setLineDash(List<Integer> lineDash)
+    public @org.jspecify.annotations.NonNull J setLineDash(List<Integer> lineDash)
     {
         this.lineDash = lineDash;
         return (J) this;
@@ -498,7 +498,7 @@ public class AgRadialColumnSeriesOptions<J extends AgRadialColumnSeriesOptions<J
 
     public Integer getLineDashOffset() {return lineDashOffset;}
 
-    public J setLineDashOffset(Integer lineDashOffset)
+    public @org.jspecify.annotations.NonNull J setLineDashOffset(Integer lineDashOffset)
     {
         this.lineDashOffset = lineDashOffset;
         return (J) this;
@@ -506,7 +506,7 @@ public class AgRadialColumnSeriesOptions<J extends AgRadialColumnSeriesOptions<J
 
     public AgBarSeriesLabelOptions<?> getLabel() {return label;}
 
-    public J setLabel(AgBarSeriesLabelOptions<?> label)
+    public @org.jspecify.annotations.NonNull J setLabel(AgBarSeriesLabelOptions<?> label)
     {
         this.label = label;
         return (J) this;

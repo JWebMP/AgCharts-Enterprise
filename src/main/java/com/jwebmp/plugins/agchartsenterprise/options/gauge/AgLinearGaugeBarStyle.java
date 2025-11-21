@@ -21,17 +21,17 @@ public class AgLinearGaugeBarStyle<J extends AgLinearGaugeBarStyle<J>> extends J
     private AgGaugeFillMode fillMode; // continuous | discrete
 
     public Integer getThickness() {return thickness;}
-    public J setThickness(Integer thickness) {this.thickness = thickness; return (J) this;}
+    public @org.jspecify.annotations.NonNull J setThickness(Integer thickness) {this.thickness = thickness; return (J) this;}
 
     public Double getThicknessRatio() {return thicknessRatio;}
-    public J setThicknessRatio(Double thicknessRatio) {this.thicknessRatio = thicknessRatio; return (J) this;}
+    public @org.jspecify.annotations.NonNull J setThicknessRatio(Double thicknessRatio) {this.thicknessRatio = thicknessRatio; return (J) this;}
 
     public String getFill() {return fill;}
-    public J setFill(String fill) {this.fill = fill; return (J) this;}
+    public @org.jspecify.annotations.NonNull J setFill(String fill) {this.fill = fill; return (J) this;}
 
     public List<AgGaugeColorStop<?>> getFills() {return fills;}
-    public J setFills(List<AgGaugeColorStop<?>> fills) {this.fills = fills; return (J) this;}
+    public @org.jspecify.annotations.NonNull J setFills(List<AgGaugeColorStop<?>> fills) {this.fills = fills; return (J) this;}
 
     public AgGaugeFillMode getFillMode() {return fillMode;}
-    public J setFillMode(AgGaugeFillMode fillMode) {this.fillMode = fillMode; return (J) this;}
+    public @org.jspecify.annotations.NonNull J setFillMode(AgGaugeFillMode fillMode) {this.fillMode = fillMode; return (J) this;}
 }

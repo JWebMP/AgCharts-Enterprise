@@ -18,7 +18,7 @@ public class AgRadialGaugeBarStyle<J extends AgRadialGaugeBarStyle<J>> extends J
 
     public Boolean getEnabled() {return enabled;}
 
-    public J setEnabled(Boolean enabled)
+    public @org.jspecify.annotations.NonNull J setEnabled(Boolean enabled)
     {
         this.enabled = enabled;
         return (J) this;
@@ -26,7 +26,7 @@ public class AgRadialGaugeBarStyle<J extends AgRadialGaugeBarStyle<J>> extends J
 
     public String getFill() {return fill;}
 
-    public J setFill(String fill)
+    public @org.jspecify.annotations.NonNull J setFill(String fill)
     {
         this.fill = fill;
         return (J) this;
@@ -34,7 +34,7 @@ public class AgRadialGaugeBarStyle<J extends AgRadialGaugeBarStyle<J>> extends J
 
     public List<AgGaugeColorStop<?>> getFills() {return fills;}
 
-    public J setFills(List<AgGaugeColorStop<?>> fills)
+    public @org.jspecify.annotations.NonNull J setFills(List<AgGaugeColorStop<?>> fills)
     {
         this.fills = fills;
         return (J) this;
@@ -42,7 +42,7 @@ public class AgRadialGaugeBarStyle<J extends AgRadialGaugeBarStyle<J>> extends J
 
     public AgGaugeFillMode getFillMode() {return fillMode;}
 
-    public J setFillMode(AgGaugeFillMode fillMode)
+    public @org.jspecify.annotations.NonNull J setFillMode(AgGaugeFillMode fillMode)
     {
         this.fillMode = fillMode;
         return (J) this;

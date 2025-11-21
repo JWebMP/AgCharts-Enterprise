@@ -22,20 +22,20 @@ public class AgLinearGaugeScale<J extends AgLinearGaugeScale<J>> extends JavaScr
     private AgRadialGaugeScaleLabelOptions<?> label;
 
     public Number getMin() {return min;}
-    public J setMin(Number min) {this.min = min; return (J) this;}
+    public @org.jspecify.annotations.NonNull J setMin(Number min) {this.min = min; return (J) this;}
 
     public Number getMax() {return max;}
-    public J setMax(Number max) {this.max = max; return (J) this;}
+    public @org.jspecify.annotations.NonNull J setMax(Number max) {this.max = max; return (J) this;}
 
     public String getFill() {return fill;}
-    public J setFill(String fill) {this.fill = fill; return (J) this;}
+    public @org.jspecify.annotations.NonNull J setFill(String fill) {this.fill = fill; return (J) this;}
 
     public List<AgGaugeColorStop<?>> getFills() {return fills;}
-    public J setFills(List<AgGaugeColorStop<?>> fills) {this.fills = fills; return (J) this;}
+    public @org.jspecify.annotations.NonNull J setFills(List<AgGaugeColorStop<?>> fills) {this.fills = fills; return (J) this;}
 
     public AgGaugeFillMode getFillMode() {return fillMode;}
-    public J setFillMode(AgGaugeFillMode fillMode) {this.fillMode = fillMode; return (J) this;}
+    public @org.jspecify.annotations.NonNull J setFillMode(AgGaugeFillMode fillMode) {this.fillMode = fillMode; return (J) this;}
 
     public AgRadialGaugeScaleLabelOptions<?> getLabel() {return label;}
-    public J setLabel(AgRadialGaugeScaleLabelOptions<?> label) {this.label = label; return (J) this;}
+    public @org.jspecify.annotations.NonNull J setLabel(AgRadialGaugeScaleLabelOptions<?> label) {this.label = label; return (J) this;}
 }

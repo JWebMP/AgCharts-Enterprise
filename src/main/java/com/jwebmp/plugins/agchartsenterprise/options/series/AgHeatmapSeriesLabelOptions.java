@@ -24,7 +24,7 @@ public class AgHeatmapSeriesLabelOptions<J extends AgHeatmapSeriesLabelOptions<J
         return enabled;
     }
 
-    public J setEnabled(Boolean enabled)
+    public @org.jspecify.annotations.NonNull J setEnabled(Boolean enabled)
     {
         this.enabled = enabled;
         return (J) this;
@@ -35,7 +35,7 @@ public class AgHeatmapSeriesLabelOptions<J extends AgHeatmapSeriesLabelOptions<J
         return formatter;
     }
 
-    public J setFormatter(String formatter)
+    public @org.jspecify.annotations.NonNull J setFormatter(String formatter)
     {
         this.formatter = formatter;
         return (J) this;

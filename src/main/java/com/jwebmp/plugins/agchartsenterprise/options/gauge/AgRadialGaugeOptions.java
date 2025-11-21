@@ -104,7 +104,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
      * @param value the numeric value to display on the gauge
      * @return this instance for method chaining
      */
-    public J setValue(Number value)
+    public @org.jspecify.annotations.NonNull J setValue(Number value)
     {
         this.value = value;
         return (J) this;
@@ -131,7 +131,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
      * @param theme the custom theme object defining all visual properties
      * @return this instance for method chaining
      */
-    public J setTheme(AgChartTheme<?> theme)
+    public @org.jspecify.annotations.NonNull J setTheme(AgChartTheme<?> theme)
     {
         this.theme = theme;
         return (J) this;
@@ -147,7 +147,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
      * @param themeName the name of a built-in theme (e.g., "ag-default", "ag-dark")
      * @return this instance for method chaining
      */
-    public J setTheme(String themeName)
+    public @org.jspecify.annotations.NonNull J setTheme(String themeName)
     {
         this.theme = themeName;
         return (J) this;
@@ -163,7 +163,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
      * @param themeName the predefined theme constant (e.g., AgChartThemeName.AG_DEFAULT)
      * @return this instance for method chaining
      */
-    public J setTheme(AgChartThemeName themeName)
+    public @org.jspecify.annotations.NonNull J setTheme(AgChartThemeName themeName)
     {
         this.theme = themeName != null ? themeName.toString() : null;
         return (J) this;
@@ -189,7 +189,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
      * @param container the DOM element that will contain the gauge
      * @return this instance for method chaining
      */
-    public J setContainer(Object container)
+    public @org.jspecify.annotations.NonNull J setContainer(Object container)
     {
         this.container = container;
         return (J) this;
@@ -215,7 +215,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
      * @param width the desired width in pixels, or null for automatic sizing
      * @return this instance for method chaining
      */
-    public J setWidth(Integer width)
+    public @org.jspecify.annotations.NonNull J setWidth(Integer width)
     {
         this.width = width;
         return (J) this;
@@ -241,7 +241,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
      * @param height the desired height in pixels, or null for automatic sizing
      * @return this instance for method chaining
      */
-    public J setHeight(Integer height)
+    public @org.jspecify.annotations.NonNull J setHeight(Integer height)
     {
         this.height = height;
         return (J) this;
@@ -267,7 +267,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
      * @param minHeight the minimum height in pixels (defaults to 300px if null)
      * @return this instance for method chaining
      */
-    public J setMinHeight(Integer minHeight)
+    public @org.jspecify.annotations.NonNull J setMinHeight(Integer minHeight)
     {
         this.minHeight = minHeight;
         return (J) this;
@@ -293,7 +293,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
      * @param minWidth the minimum width in pixels (defaults to 300px if null)
      * @return this instance for method chaining
      */
-    public J setMinWidth(Integer minWidth)
+    public @org.jspecify.annotations.NonNull J setMinWidth(Integer minWidth)
     {
         this.minWidth = minWidth;
         return (J) this;
@@ -319,7 +319,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
      * @param padding the padding value in pixels to apply to all sides
      * @return this instance for method chaining
      */
-    public J setPadding(Integer padding)
+    public @org.jspecify.annotations.NonNull J setPadding(Integer padding)
     {
         this.padding = padding;
         return (J) this;
@@ -335,7 +335,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
      * @param padding an object with padding properties for individual sides
      * @return this instance for method chaining
      */
-    public J setPadding(Object padding)
+    public @org.jspecify.annotations.NonNull J setPadding(Object padding)
     {
         this.padding = padding;
         return (J) this;
@@ -362,7 +362,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
      * @param background the background configuration for styling behind gauge elements
      * @return this instance for method chaining
      */
-    public J setBackground(AgChartBackground<?> background)
+    public @org.jspecify.annotations.NonNull J setBackground(AgChartBackground<?> background)
     {
         this.background = background;
         return (J) this;
@@ -389,7 +389,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
      * @param title the title configuration including text, positioning, and styling
      * @return this instance for method chaining
      */
-    public J setTitle(AgChartCaptionOptions<?> title)
+    public @org.jspecify.annotations.NonNull J setTitle(AgChartCaptionOptions<?> title)
     {
         this.title = title;
         return (J) this;
@@ -406,7 +406,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
      */
     public AgChartCaptionOptions<?> getSubtitle() {return subtitle;}
 
-    public J setSubtitle(AgChartCaptionOptions<?> subtitle)
+    public @org.jspecify.annotations.NonNull J setSubtitle(AgChartCaptionOptions<?> subtitle)
     {
         this.subtitle = subtitle;
         return (J) this;
@@ -414,7 +414,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
 
     public AgChartCaptionOptions<?> getFootnote() {return footnote;}
 
-    public J setFootnote(AgChartCaptionOptions<?> footnote)
+    public @org.jspecify.annotations.NonNull J setFootnote(AgChartCaptionOptions<?> footnote)
     {
         this.footnote = footnote;
         return (J) this;
@@ -422,7 +422,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
 
     public AgChartTooltipOptions<?> getTooltip() {return tooltip;}
 
-    public J setTooltip(AgChartTooltipOptions<?> tooltip)
+    public @org.jspecify.annotations.NonNull J setTooltip(AgChartTooltipOptions<?> tooltip)
     {
         this.tooltip = tooltip;
         return (J) this;
@@ -430,7 +430,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
 
     public Object getAnimation() {return animation;}
 
-    public J setAnimation(Object animation)
+    public @org.jspecify.annotations.NonNull J setAnimation(Object animation)
     {
         this.animation = animation;
         return (J) this;
@@ -438,7 +438,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
 
     public Object getContextMenu() {return contextMenu;}
 
-    public J setContextMenu(Object contextMenu)
+    public @org.jspecify.annotations.NonNull J setContextMenu(Object contextMenu)
     {
         this.contextMenu = contextMenu;
         return (J) this;
@@ -446,7 +446,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
 
     public Object getContext() {return context;}
 
-    public J setContext(Object context)
+    public @org.jspecify.annotations.NonNull J setContext(Object context)
     {
         this.context = context;
         return (J) this;
@@ -454,7 +454,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
 
     public AgLocaleOptions<?> getLocale() {return locale;}
 
-    public J setLocale(AgLocaleOptions<?> locale)
+    public @org.jspecify.annotations.NonNull J setLocale(AgLocaleOptions<?> locale)
     {
         this.locale = locale;
         return (J) this;
@@ -462,7 +462,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
 
     public Object getListeners() {return listeners;}
 
-    public J setListeners(Object listeners)
+    public @org.jspecify.annotations.NonNull J setListeners(Object listeners)
     {
         this.listeners = listeners;
         return (J) this;
@@ -470,7 +470,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
 
     public List<AgRadialGaugeTarget<?>> getTargets() {return targets;}
 
-    public J setTargets(List<AgRadialGaugeTarget<?>> targets)
+    public @org.jspecify.annotations.NonNull J setTargets(List<AgRadialGaugeTarget<?>> targets)
     {
         this.targets = targets;
         return (J) this;
@@ -497,7 +497,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
      * @param outerRadius the outer radius in pixels (must be positive)
      * @return this instance for method chaining
      */
-    public J setOuterRadius(Integer outerRadius)
+    public @org.jspecify.annotations.NonNull J setOuterRadius(Integer outerRadius)
     {
         this.outerRadius = outerRadius;
         return (J) this;
@@ -524,7 +524,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
      * @param innerRadius the inner radius in pixels (must be positive and less than outer radius)
      * @return this instance for method chaining
      */
-    public J setInnerRadius(Integer innerRadius)
+    public @org.jspecify.annotations.NonNull J setInnerRadius(Integer innerRadius)
     {
         this.innerRadius = innerRadius;
         return (J) this;
@@ -551,7 +551,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
      * @param outerRadiusRatio the outer radius ratio (should be between 0.0 and 1.0)
      * @return this instance for method chaining
      */
-    public J setOuterRadiusRatio(Double outerRadiusRatio)
+    public @org.jspecify.annotations.NonNull J setOuterRadiusRatio(Double outerRadiusRatio)
     {
         this.outerRadiusRatio = outerRadiusRatio;
         return (J) this;
@@ -578,7 +578,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
      * @param innerRadiusRatio the inner radius ratio (should be between 0.0 and 1.0, less than 1.0)
      * @return this instance for method chaining
      */
-    public J setInnerRadiusRatio(Double innerRadiusRatio)
+    public @org.jspecify.annotations.NonNull J setInnerRadiusRatio(Double innerRadiusRatio)
     {
         this.innerRadiusRatio = innerRadiusRatio;
         return (J) this;
@@ -605,7 +605,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
      * @param startAngle the start angle in degrees (typically -180 to 180)
      * @return this instance for method chaining
      */
-    public J setStartAngle(Integer startAngle)
+    public @org.jspecify.annotations.NonNull J setStartAngle(Integer startAngle)
     {
         this.startAngle = startAngle;
         return (J) this;
@@ -632,7 +632,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
      * @param endAngle the end angle in degrees (must be greater than start angle)
      * @return this instance for method chaining
      */
-    public J setEndAngle(Integer endAngle)
+    public @org.jspecify.annotations.NonNull J setEndAngle(Integer endAngle)
     {
         this.endAngle = endAngle;
         return (J) this;
@@ -640,7 +640,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
 
     public AgGaugeSegmentation<?> getSegmentation() {return segmentation;}
 
-    public J setSegmentation(AgGaugeSegmentation<?> segmentation)
+    public @org.jspecify.annotations.NonNull J setSegmentation(AgGaugeSegmentation<?> segmentation)
     {
         this.segmentation = segmentation;
         return (J) this;
@@ -648,7 +648,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
 
     public Integer getCornerRadius() {return cornerRadius;}
 
-    public J setCornerRadius(Integer cornerRadius)
+    public @org.jspecify.annotations.NonNull J setCornerRadius(Integer cornerRadius)
     {
         this.cornerRadius = cornerRadius;
         return (J) this;
@@ -656,7 +656,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
 
     public AgGaugeCornerMode getCornerMode() {return cornerMode;}
 
-    public J setCornerMode(AgGaugeCornerMode cornerMode)
+    public @org.jspecify.annotations.NonNull J setCornerMode(AgGaugeCornerMode cornerMode)
     {
         this.cornerMode = cornerMode;
         return (J) this;
@@ -664,7 +664,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
 
     public AgRadialGaugeNeedleStyle<?> getNeedle() {return needle;}
 
-    public J setNeedle(AgRadialGaugeNeedleStyle<?> needle)
+    public @org.jspecify.annotations.NonNull J setNeedle(AgRadialGaugeNeedleStyle<?> needle)
     {
         this.needle = needle;
         return (J) this;
@@ -672,7 +672,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
 
     public AgRadialGaugeScale<?> getScale() {return scale;}
 
-    public J setScale(AgRadialGaugeScale<?> scale)
+    public @org.jspecify.annotations.NonNull J setScale(AgRadialGaugeScale<?> scale)
     {
         this.scale = scale;
         return (J) this;
@@ -680,7 +680,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
 
     public AgRadialGaugeBarStyle<?> getBar() {return bar;}
 
-    public J setBar(AgRadialGaugeBarStyle<?> bar)
+    public @org.jspecify.annotations.NonNull J setBar(AgRadialGaugeBarStyle<?> bar)
     {
         this.bar = bar;
         return (J) this;
@@ -688,7 +688,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
 
     public AgRadialGaugeLabelOptions<?> getLabel() {return label;}
 
-    public J setLabel(AgRadialGaugeLabelOptions<?> label)
+    public @org.jspecify.annotations.NonNull J setLabel(AgRadialGaugeLabelOptions<?> label)
     {
         this.label = label;
         return (J) this;
@@ -696,7 +696,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
 
     public AgRadialGaugeSecondaryLabelOptions<?> getSecondaryLabel() {return secondaryLabel;}
 
-    public J setSecondaryLabel(AgRadialGaugeSecondaryLabelOptions<?> secondaryLabel)
+    public @org.jspecify.annotations.NonNull J setSecondaryLabel(AgRadialGaugeSecondaryLabelOptions<?> secondaryLabel)
     {
         this.secondaryLabel = secondaryLabel;
         return (J) this;
@@ -704,7 +704,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
 
     public Integer getSpacing() {return spacing;}
 
-    public J setSpacing(Integer spacing)
+    public @org.jspecify.annotations.NonNull J setSpacing(Integer spacing)
     {
         this.spacing = spacing;
         return (J) this;
@@ -712,7 +712,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
 
     public String getCursor() {return cursor;}
 
-    public J setCursor(String cursor)
+    public @org.jspecify.annotations.NonNull J setCursor(String cursor)
     {
         this.cursor = cursor;
         return (J) this;
@@ -720,7 +720,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
 
     public Object getHighlight() {return highlight;}
 
-    public J setHighlight(Object highlight)
+    public @org.jspecify.annotations.NonNull J setHighlight(Object highlight)
     {
         this.highlight = highlight;
         return (J) this;
@@ -728,7 +728,7 @@ public class AgRadialGaugeOptions<J extends AgRadialGaugeOptions<J>> extends Jav
 
     public Object getNodeClickRange() {return nodeClickRange;}
 
-    public J setNodeClickRange(Object nodeClickRange)
+    public @org.jspecify.annotations.NonNull J setNodeClickRange(Object nodeClickRange)
     {
         this.nodeClickRange = nodeClickRange;
         return (J) this;

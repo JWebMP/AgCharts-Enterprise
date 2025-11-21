@@ -20,7 +20,7 @@ public class AgAngleNumberAxisOptions<J extends AgAngleNumberAxisOptions<J>> ext
         return startAngle;
     }
 
-    public J setStartAngle(Integer startAngle) {
+    public @org.jspecify.annotations.NonNull J setStartAngle(Integer startAngle) {
         this.startAngle = startAngle;
         return (J) this;
     }
@@ -29,7 +29,7 @@ public class AgAngleNumberAxisOptions<J extends AgAngleNumberAxisOptions<J>> ext
         return endAngle;
     }
 
-    public J setEndAngle(Integer endAngle) {
+    public @org.jspecify.annotations.NonNull J setEndAngle(Integer endAngle) {
         this.endAngle = endAngle;
         return (J) this;
     }
@@ -37,7 +37,7 @@ public class AgAngleNumberAxisOptions<J extends AgAngleNumberAxisOptions<J>> ext
     /**
      * Helper to set a polar-specific label options instance which supports orientation.
      */
-    public J setPolarLabel(AgPolarAxisLabelOptions<?> label) {
+    public @org.jspecify.annotations.NonNull J setPolarLabel(AgPolarAxisLabelOptions<?> label) {
         // Reuse base setter but accept the extended type for convenience.
         super.setLabel(label);
         return (J) this;

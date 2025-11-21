@@ -41,7 +41,7 @@ public class AgRadialGaugeScale<J extends AgRadialGaugeScale<J>> extends JavaScr
      * @param min the minimum scale value, should be less than max when both are defined
      * @return this instance for method chaining
      */
-    public J setMin(Number min)
+    public @org.jspecify.annotations.NonNull J setMin(Number min)
     {
         this.min = min;
         return (J) this;
@@ -68,7 +68,7 @@ public class AgRadialGaugeScale<J extends AgRadialGaugeScale<J>> extends JavaScr
      * @param max the maximum scale value, should be greater than min when both are defined
      * @return this instance for method chaining
      */
-    public J setMax(Number max)
+    public @org.jspecify.annotations.NonNull J setMax(Number max)
     {
         this.max = max;
         return (J) this;
@@ -94,7 +94,7 @@ public class AgRadialGaugeScale<J extends AgRadialGaugeScale<J>> extends JavaScr
      * @param fill the CSS color string for the scale background (e.g., "#FF0000", "rgba(255,0,0,0.5)")
      * @return this instance for method chaining
      */
-    public J setFill(String fill)
+    public @org.jspecify.annotations.NonNull J setFill(String fill)
     {
         this.fill = fill;
         return (J) this;
@@ -121,7 +121,7 @@ public class AgRadialGaugeScale<J extends AgRadialGaugeScale<J>> extends JavaScr
      * @param fills the list of color stops, each defining a color and stop position (0.0 to 1.0)
      * @return this instance for method chaining
      */
-    public J setFills(List<AgGaugeColorStop<?>> fills)
+    public @org.jspecify.annotations.NonNull J setFills(List<AgGaugeColorStop<?>> fills)
     {
         this.fills = fills;
         return (J) this;
@@ -147,7 +147,7 @@ public class AgRadialGaugeScale<J extends AgRadialGaugeScale<J>> extends JavaScr
      * @param fillMode the fill rendering mode (CONTINUOUS or DISCRETE)
      * @return this instance for method chaining
      */
-    public J setFillMode(AgGaugeFillMode fillMode)
+    public @org.jspecify.annotations.NonNull J setFillMode(AgGaugeFillMode fillMode)
     {
         this.fillMode = fillMode;
         return (J) this;
@@ -173,7 +173,7 @@ public class AgRadialGaugeScale<J extends AgRadialGaugeScale<J>> extends JavaScr
      * @param label the scale label options for customizing tick label appearance and behavior
      * @return this instance for method chaining
      */
-    public J setLabel(AgRadialGaugeScaleLabelOptions<?> label)
+    public @org.jspecify.annotations.NonNull J setLabel(AgRadialGaugeScaleLabelOptions<?> label)
     {
         this.label = label;
         return (J) this;

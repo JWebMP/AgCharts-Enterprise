@@ -32,7 +32,7 @@ public class AgRadialGauge<J extends AgRadialGauge<J>> extends AgGauge<J>
      * @return this instance for method chaining
      */
     @SuppressWarnings("unchecked")
-    public J setValue(Number value)
+    public @org.jspecify.annotations.NonNull J setValue(Number value)
     {
         this.value = value;
         return (J) this;
@@ -48,7 +48,7 @@ public class AgRadialGauge<J extends AgRadialGauge<J>> extends AgGauge<J>
      * @return this instance for method chaining
      */
     @SuppressWarnings("unchecked")
-    public J setMin(Number min)
+    public @org.jspecify.annotations.NonNull J setMin(Number min)
     {
         this.min = min;
         return (J) this;
@@ -64,7 +64,7 @@ public class AgRadialGauge<J extends AgRadialGauge<J>> extends AgGauge<J>
      * @return this instance for method chaining
      */
     @SuppressWarnings("unchecked")
-    public J setMax(Number max)
+    public @org.jspecify.annotations.NonNull J setMax(Number max)
     {
         this.max = max;
         return (J) this;

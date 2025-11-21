@@ -15,7 +15,7 @@ public class AgGaugeSegmentation<J extends AgGaugeSegmentation<J>> extends JavaS
 
     public Boolean getEnabled() {return enabled;}
 
-    public J setEnabled(Boolean enabled)
+    public @org.jspecify.annotations.NonNull J setEnabled(Boolean enabled)
     {
         this.enabled = enabled;
         return (J) this;
@@ -23,7 +23,7 @@ public class AgGaugeSegmentation<J extends AgGaugeSegmentation<J>> extends JavaS
 
     public AgGaugeSegmentationInterval<?> getInterval() {return interval;}
 
-    public J setInterval(AgGaugeSegmentationInterval<?> interval)
+    public @org.jspecify.annotations.NonNull J setInterval(AgGaugeSegmentationInterval<?> interval)
     {
         this.interval = interval;
         return (J) this;
@@ -31,7 +31,7 @@ public class AgGaugeSegmentation<J extends AgGaugeSegmentation<J>> extends JavaS
 
     public Integer getSpacing() {return spacing;}
 
-    public J setSpacing(Integer spacing)
+    public @org.jspecify.annotations.NonNull J setSpacing(Integer spacing)
     {
         this.spacing = spacing;
         return (J) this;

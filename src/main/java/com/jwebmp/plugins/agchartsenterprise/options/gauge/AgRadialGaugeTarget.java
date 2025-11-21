@@ -24,7 +24,7 @@ public class AgRadialGaugeTarget<J extends AgRadialGaugeTarget<J>> extends JavaS
 
     public Number getValue() {return value;}
 
-    public J setValue(Number value)
+    public @org.jspecify.annotations.NonNull J setValue(Number value)
     {
         this.value = value;
         return (J) this;
@@ -32,7 +32,7 @@ public class AgRadialGaugeTarget<J extends AgRadialGaugeTarget<J>> extends JavaS
 
     public String getText() {return text;}
 
-    public J setText(String text)
+    public @org.jspecify.annotations.NonNull J setText(String text)
     {
         this.text = text;
         return (J) this;
@@ -40,7 +40,7 @@ public class AgRadialGaugeTarget<J extends AgRadialGaugeTarget<J>> extends JavaS
 
     public String getShape() {return shape;}
 
-    public J setShape(String shape)
+    public @org.jspecify.annotations.NonNull J setShape(String shape)
     {
         this.shape = shape;
         return (J) this;
@@ -48,7 +48,7 @@ public class AgRadialGaugeTarget<J extends AgRadialGaugeTarget<J>> extends JavaS
 
     public AgGaugeTargetPlacement getPlacement() {return placement;}
 
-    public J setPlacement(AgGaugeTargetPlacement placement)
+    public @org.jspecify.annotations.NonNull J setPlacement(AgGaugeTargetPlacement placement)
     {
         this.placement = placement;
         return (J) this;
@@ -56,7 +56,7 @@ public class AgRadialGaugeTarget<J extends AgRadialGaugeTarget<J>> extends JavaS
 
     public Integer getSize() {return size;}
 
-    public J setSize(Integer size)
+    public @org.jspecify.annotations.NonNull J setSize(Integer size)
     {
         this.size = size;
         return (J) this;
@@ -64,7 +64,7 @@ public class AgRadialGaugeTarget<J extends AgRadialGaugeTarget<J>> extends JavaS
 
     public Integer getSpacing() {return spacing;}
 
-    public J setSpacing(Integer spacing)
+    public @org.jspecify.annotations.NonNull J setSpacing(Integer spacing)
     {
         this.spacing = spacing;
         return (J) this;
@@ -72,7 +72,7 @@ public class AgRadialGaugeTarget<J extends AgRadialGaugeTarget<J>> extends JavaS
 
     public String getFill() {return fill;}
 
-    public J setFill(String fill)
+    public @org.jspecify.annotations.NonNull J setFill(String fill)
     {
         this.fill = fill;
         return (J) this;
@@ -80,7 +80,7 @@ public class AgRadialGaugeTarget<J extends AgRadialGaugeTarget<J>> extends JavaS
 
     public String getStroke() {return stroke;}
 
-    public J setStroke(String stroke)
+    public @org.jspecify.annotations.NonNull J setStroke(String stroke)
     {
         this.stroke = stroke;
         return (J) this;
@@ -88,7 +88,7 @@ public class AgRadialGaugeTarget<J extends AgRadialGaugeTarget<J>> extends JavaS
 
     public Integer getStrokeWidth() {return strokeWidth;}
 
-    public J setStrokeWidth(Integer strokeWidth)
+    public @org.jspecify.annotations.NonNull J setStrokeWidth(Integer strokeWidth)
     {
         this.strokeWidth = strokeWidth;
         return (J) this;

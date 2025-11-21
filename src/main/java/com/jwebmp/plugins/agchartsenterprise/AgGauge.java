@@ -84,8 +84,8 @@ public abstract class AgGauge<J extends AgGauge<J>> extends DivSimple<J> impleme
         addAttribute("[options]", "gaugeOptions()");
         addAttribute("*ngIf", "gaugeConfiguration() && gaugeOptions()");
 
-        addConfiguration(AnnotationUtils.getNgField("readonly listenerName = '" + getID() + "';"));
-        addConfiguration(AnnotationUtils.getNgField("readonly clazzName = '" + getClass().getCanonicalName() + "';"));
+        addConfiguration(AnnotationUtils.getNgField("readonly listenerName = '" + getID() + "';",false,true));
+        addConfiguration(AnnotationUtils.getNgField("readonly clazzName = '" + getClass().getCanonicalName() + "';",false,true));
         registerWebSocketListeners();
     }
 

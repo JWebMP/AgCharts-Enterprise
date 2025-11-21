@@ -36,7 +36,7 @@ public class AgRadiusNumberAxisOptions<J extends AgRadiusNumberAxisOptions<J>> e
      * @param innerRadiusRatio the inner radius ratio, should be between 0 and 1
      * @return this instance for method chaining
      */
-    public J setInnerRadiusRatio(Double innerRadiusRatio)
+    public @org.jspecify.annotations.NonNull J setInnerRadiusRatio(Double innerRadiusRatio)
     {
         this.innerRadiusRatio = innerRadiusRatio;
         return (J) this;
@@ -61,7 +61,7 @@ public class AgRadiusNumberAxisOptions<J extends AgRadiusNumberAxisOptions<J>> e
      * @param positionAngle the position angle in degrees (0-360)
      * @return this instance for method chaining
      */
-    public J setPositionAngle(Integer positionAngle)
+    public @org.jspecify.annotations.NonNull J setPositionAngle(Integer positionAngle)
     {
         this.positionAngle = positionAngle;
         return (J) this;

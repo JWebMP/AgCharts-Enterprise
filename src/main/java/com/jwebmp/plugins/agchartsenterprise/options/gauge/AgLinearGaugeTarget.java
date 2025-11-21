@@ -24,29 +24,29 @@ public class AgLinearGaugeTarget<J extends AgLinearGaugeTarget<J>> extends JavaS
     private Integer strokeWidth;
 
     public Number getValue() {return value;}
-    public J setValue(Number value) {this.value = value; return (J) this;}
+    public @org.jspecify.annotations.NonNull J setValue(Number value) {this.value = value; return (J) this;}
 
     public String getText() {return text;}
-    public J setText(String text) {this.text = text; return (J) this;}
+    public @org.jspecify.annotations.NonNull J setText(String text) {this.text = text; return (J) this;}
 
     public String getShape() {return shape;}
-    public J setShape(String shape) {this.shape = shape; return (J) this;}
+    public @org.jspecify.annotations.NonNull J setShape(String shape) {this.shape = shape; return (J) this;}
 
     public String getPlacement() {return placement;}
-    public J setPlacement(String placement) {this.placement = placement; return (J) this;}
+    public @org.jspecify.annotations.NonNull J setPlacement(String placement) {this.placement = placement; return (J) this;}
 
     public Integer getSize() {return size;}
-    public J setSize(Integer size) {this.size = size; return (J) this;}
+    public @org.jspecify.annotations.NonNull J setSize(Integer size) {this.size = size; return (J) this;}
 
     public Integer getSpacing() {return spacing;}
-    public J setSpacing(Integer spacing) {this.spacing = spacing; return (J) this;}
+    public @org.jspecify.annotations.NonNull J setSpacing(Integer spacing) {this.spacing = spacing; return (J) this;}
 
     public String getFill() {return fill;}
-    public J setFill(String fill) {this.fill = fill; return (J) this;}
+    public @org.jspecify.annotations.NonNull J setFill(String fill) {this.fill = fill; return (J) this;}
 
     public String getStroke() {return stroke;}
-    public J setStroke(String stroke) {this.stroke = stroke; return (J) this;}
+    public @org.jspecify.annotations.NonNull J setStroke(String stroke) {this.stroke = stroke; return (J) this;}
 
     public Integer getStrokeWidth() {return strokeWidth;}
-    public J setStrokeWidth(Integer strokeWidth) {this.strokeWidth = strokeWidth; return (J) this;}
+    public @org.jspecify.annotations.NonNull J setStrokeWidth(Integer strokeWidth) {this.strokeWidth = strokeWidth; return (J) this;}
 }

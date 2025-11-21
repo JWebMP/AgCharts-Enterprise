@@ -14,7 +14,7 @@ public class AgPolarAxisLabelOptions<J extends AgPolarAxisLabelOptions<J>> exten
         return orientation;
     }
 
-    public J setOrientation(AgAxisLabelOrientation orientation) {
+    public @org.jspecify.annotations.NonNull J setOrientation(AgAxisLabelOrientation orientation) {
         this.orientation = orientation;
         return (J) this;
     }

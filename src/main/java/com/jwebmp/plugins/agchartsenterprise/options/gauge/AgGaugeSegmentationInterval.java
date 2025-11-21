@@ -18,7 +18,7 @@ public class AgGaugeSegmentationInterval<J extends AgGaugeSegmentationInterval<J
 
     public Number getStep() {return step;}
 
-    public J setStep(Number step)
+    public @org.jspecify.annotations.NonNull J setStep(Number step)
     {
         this.step = step;
         return (J) this;
@@ -26,7 +26,7 @@ public class AgGaugeSegmentationInterval<J extends AgGaugeSegmentationInterval<J
 
     public Integer getCount() {return count;}
 
-    public J setCount(Integer count)
+    public @org.jspecify.annotations.NonNull J setCount(Integer count)
     {
         this.count = count;
         return (J) this;
@@ -34,7 +34,7 @@ public class AgGaugeSegmentationInterval<J extends AgGaugeSegmentationInterval<J
 
     public List<Number> getValues() {return values;}
 
-    public J setValues(List<Number> values)
+    public @org.jspecify.annotations.NonNull J setValues(List<Number> values)
     {
         this.values = values;
         return (J) this;

@@ -70,151 +70,151 @@ public class AgRadialColumnChart<J extends AgRadialColumnChart<J>> extends AgCha
     }
 
     // --- Fluent setters ---
-    public J setAngleName(String angleName)
+    public @org.jspecify.annotations.NonNull J setAngleName(String angleName)
     {
         this.angleName = angleName;
         return (J) this;
     }
 
-    public J setRadiusName(String radiusName)
+    public @org.jspecify.annotations.NonNull J setRadiusName(String radiusName)
     {
         this.radiusName = radiusName;
         return (J) this;
     }
 
-    public J setLegendItemName(String legendItemName)
+    public @org.jspecify.annotations.NonNull J setLegendItemName(String legendItemName)
     {
         this.legendItemName = legendItemName;
         return (J) this;
     }
 
-    public J setGrouped(Boolean grouped)
+    public @org.jspecify.annotations.NonNull J setGrouped(Boolean grouped)
     {
         this.grouped = grouped;
         return (J) this;
     }
 
-    public J setStacked(Boolean stacked)
+    public @org.jspecify.annotations.NonNull J setStacked(Boolean stacked)
     {
         this.stacked = stacked;
         return (J) this;
     }
 
-    public J setStackGroup(String stackGroup)
+    public @org.jspecify.annotations.NonNull J setStackGroup(String stackGroup)
     {
         this.stackGroup = stackGroup;
         return (J) this;
     }
 
-    public J setNormalizedTo(Number normalizedTo)
+    public @org.jspecify.annotations.NonNull J setNormalizedTo(Number normalizedTo)
     {
         this.normalizedTo = normalizedTo;
         return (J) this;
     }
 
-    public J setColumnWidthRatio(Double columnWidthRatio)
+    public @org.jspecify.annotations.NonNull J setColumnWidthRatio(Double columnWidthRatio)
     {
         this.columnWidthRatio = columnWidthRatio;
         return (J) this;
     }
 
-    public J setMaxColumnWidthRatio(Double maxColumnWidthRatio)
+    public @org.jspecify.annotations.NonNull J setMaxColumnWidthRatio(Double maxColumnWidthRatio)
     {
         this.maxColumnWidthRatio = maxColumnWidthRatio;
         return (J) this;
     }
 
-    public J setCornerRadius(Integer cornerRadius)
+    public @org.jspecify.annotations.NonNull J setCornerRadius(Integer cornerRadius)
     {
         this.cornerRadius = cornerRadius;
         return (J) this;
     }
 
-    public J setFillOpacity(Double fillOpacity)
+    public @org.jspecify.annotations.NonNull J setFillOpacity(Double fillOpacity)
     {
         this.fillOpacity = fillOpacity;
         return (J) this;
     }
 
-    public J setStroke(String stroke)
+    public @org.jspecify.annotations.NonNull J setStroke(String stroke)
     {
         this.stroke = stroke;
         return (J) this;
     }
 
-    public J setStrokeWidth(Integer strokeWidth)
+    public @org.jspecify.annotations.NonNull J setStrokeWidth(Integer strokeWidth)
     {
         this.strokeWidth = strokeWidth;
         return (J) this;
     }
 
-    public J setStrokeOpacity(Double strokeOpacity)
+    public @org.jspecify.annotations.NonNull J setStrokeOpacity(Double strokeOpacity)
     {
         this.strokeOpacity = strokeOpacity;
         return (J) this;
     }
 
-    public J setLineDash(List<Integer> lineDash)
+    public @org.jspecify.annotations.NonNull J setLineDash(List<Integer> lineDash)
     {
         this.lineDash = lineDash;
         return (J) this;
     }
 
-    public J setLineDashOffset(Integer lineDashOffset)
+    public @org.jspecify.annotations.NonNull J setLineDashOffset(Integer lineDashOffset)
     {
         this.lineDashOffset = lineDashOffset;
         return (J) this;
     }
 
-    public J setLabel(AgBarSeriesLabelOptions<?> label)
+    public @org.jspecify.annotations.NonNull J setLabel(AgBarSeriesLabelOptions<?> label)
     {
         this.label = label;
         return (J) this;
     }
 
-    public J setShowInLegend(Boolean showInLegend)
+    public @org.jspecify.annotations.NonNull J setShowInLegend(Boolean showInLegend)
     {
         this.showInLegend = showInLegend;
         return (J) this;
     }
 
-    public J setData(List<?> data)
+    public @org.jspecify.annotations.NonNull J setData(List<?> data)
     {
         this.data = data;
         return (J) this;
     }
 
-    public J setAnglePaddingInner(Double anglePaddingInner)
+    public @org.jspecify.annotations.NonNull J setAnglePaddingInner(Double anglePaddingInner)
     {
         this.anglePaddingInner = anglePaddingInner;
         return (J) this;
     }
 
-    public J setAngleGroupPaddingInner(Double angleGroupPaddingInner)
+    public @org.jspecify.annotations.NonNull J setAngleGroupPaddingInner(Double angleGroupPaddingInner)
     {
         this.angleGroupPaddingInner = angleGroupPaddingInner;
         return (J) this;
     }
 
-    public J setAngleLabelOrientation(AgAxisLabelOrientation orientation)
+    public @org.jspecify.annotations.NonNull J setAngleLabelOrientation(AgAxisLabelOrientation orientation)
     {
         this.angleLabelOrientation = orientation;
         return (J) this;
     }
 
-    public J setRadiusInnerRadiusRatio(Double radiusInnerRadiusRatio)
+    public @org.jspecify.annotations.NonNull J setRadiusInnerRadiusRatio(Double radiusInnerRadiusRatio)
     {
         this.radiusInnerRadiusRatio = radiusInnerRadiusRatio;
         return (J) this;
     }
 
-    public J setRadiusPositionAngle(Integer radiusPositionAngle)
+    public @org.jspecify.annotations.NonNull J setRadiusPositionAngle(Integer radiusPositionAngle)
     {
         this.radiusPositionAngle = radiusPositionAngle;
         return (J) this;
     }
 
-    public J setRadiusLabelRotation(Integer radiusLabelRotation)
+    public @org.jspecify.annotations.NonNull J setRadiusLabelRotation(Integer radiusLabelRotation)
     {
         this.radiusLabelRotation = radiusLabelRotation;
         return (J) this;

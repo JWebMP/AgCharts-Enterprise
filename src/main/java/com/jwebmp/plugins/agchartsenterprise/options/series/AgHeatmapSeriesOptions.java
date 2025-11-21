@@ -62,69 +62,69 @@ public class AgHeatmapSeriesOptions<J extends AgHeatmapSeriesOptions<J>> extends
 
     // --- Getters/Setters ---
     public String getxKey() {return xKey;}
-    public J setxKey(String xKey) {this.xKey = xKey;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setxKey(String xKey) {this.xKey = xKey;return (J) this;}
 
     public String getyKey() {return yKey;}
-    public J setyKey(String yKey) {this.yKey = yKey;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setyKey(String yKey) {this.yKey = yKey;return (J) this;}
 
     public String getColorKey() {return colorKey;}
-    public J setColorKey(String colorKey) {this.colorKey = colorKey;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setColorKey(String colorKey) {this.colorKey = colorKey;return (J) this;}
 
     public String getxName() {return xName;}
-    public J setxName(String xName) {this.xName = xName;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setxName(String xName) {this.xName = xName;return (J) this;}
 
     public String getyName() {return yName;}
-    public J setyName(String yName) {this.yName = yName;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setyName(String yName) {this.yName = yName;return (J) this;}
 
     public String getColorName() {return colorName;}
-    public J setColorName(String colorName) {this.colorName = colorName;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setColorName(String colorName) {this.colorName = colorName;return (J) this;}
 
     public List<String> getColorRange() {return colorRange;}
-    public J setColorRange(List<String> colorRange) {this.colorRange = colorRange;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setColorRange(List<String> colorRange) {this.colorRange = colorRange;return (J) this;}
 
     public String getId() {return id;}
-    public J setId(String id) {this.id = id; setSeriesId(id); return (J) this;}
+    public @org.jspecify.annotations.NonNull J setId(String id) {this.id = id; setSeriesId(id); return (J) this;}
 
     public Object getContext() {return context;}
-    public J setContext(Object context) {this.context = context;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setContext(Object context) {this.context = context;return (J) this;}
 
     public List<?> getData() {return data;}
-    public J setData(List<?> data) {this.data = data;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setData(List<?> data) {this.data = data;return (J) this;}
 
     public Boolean getVisible() {return visible;}
-    public J setVisible(Boolean visible) {this.visible = visible;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setVisible(Boolean visible) {this.visible = visible;return (J) this;}
 
     public String getCursor() {return cursor;}
-    public J setCursor(String cursor) {this.cursor = cursor;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setCursor(String cursor) {this.cursor = cursor;return (J) this;}
 
     public Object getNodeClickRange() {return nodeClickRange;}
-    public J setNodeClickRange(String range) {this.nodeClickRange = range;return (J) this;}
-    public J setNodeClickRange(Integer pixels) {this.nodeClickRange = pixels;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setNodeClickRange(String range) {this.nodeClickRange = range;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setNodeClickRange(Integer pixels) {this.nodeClickRange = pixels;return (J) this;}
 
     public AgSeriesListeners<?> getListeners() {return listeners;}
-    public J setListeners(AgSeriesListeners<?> listeners) {this.listeners = listeners;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setListeners(AgSeriesListeners<?> listeners) {this.listeners = listeners;return (J) this;}
 
     public Boolean getShowInMiniChart() {return showInMiniChart;}
-    public J setShowInMiniChart(Boolean showInMiniChart) {this.showInMiniChart = showInMiniChart;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setShowInMiniChart(Boolean showInMiniChart) {this.showInMiniChart = showInMiniChart;return (J) this;}
 
     public Integer getItemPadding() {return itemPadding;}
-    public J setItemPadding(Integer itemPadding) {this.itemPadding = itemPadding;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setItemPadding(Integer itemPadding) {this.itemPadding = itemPadding;return (J) this;}
 
     public String getTextAlign() {return textAlign;}
-    public J setTextAlign(String textAlign) {this.textAlign = textAlign;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setTextAlign(String textAlign) {this.textAlign = textAlign;return (J) this;}
 
     public String getVerticalAlign() {return verticalAlign;}
-    public J setVerticalAlign(String verticalAlign) {this.verticalAlign = verticalAlign;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setVerticalAlign(String verticalAlign) {this.verticalAlign = verticalAlign;return (J) this;}
 
     public String getTitle() {return title;}
-    public J setTitle(String title) {this.title = title;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setTitle(String title) {this.title = title;return (J) this;}
 
     public String getStroke() {return stroke;}
-    public J setStroke(String stroke) {this.stroke = stroke;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setStroke(String stroke) {this.stroke = stroke;return (J) this;}
 
     public Integer getStrokeWidth() {return strokeWidth;}
-    public J setStrokeWidth(Integer strokeWidth) {this.strokeWidth = strokeWidth;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setStrokeWidth(Integer strokeWidth) {this.strokeWidth = strokeWidth;return (J) this;}
 
     public Double getStrokeOpacity() {return strokeOpacity;}
-    public J setStrokeOpacity(Double strokeOpacity) {this.strokeOpacity = strokeOpacity;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setStrokeOpacity(Double strokeOpacity) {this.strokeOpacity = strokeOpacity;return (J) this;}
 }
