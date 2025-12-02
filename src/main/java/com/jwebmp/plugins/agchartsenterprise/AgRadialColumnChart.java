@@ -5,7 +5,7 @@ import com.jwebmp.plugins.agcharts.options.AgChartOptions;
 import com.jwebmp.plugins.agchartsenterprise.options.axes.AgAngleCategoryAxisOptions;
 import com.jwebmp.plugins.agchartsenterprise.options.axes.AgPolarAxisLabelOptions;
 import com.jwebmp.plugins.agchartsenterprise.options.axes.AgAxisLabelOrientation;
-import com.jwebmp.plugins.agchartsenterprise.options.series.AgRadiusNumberAxisOptions;
+import com.jwebmp.plugins.agchartsenterprise.options.axes.AgRadiusNumberAxisOptions;
 import com.jwebmp.plugins.agcharts.options.series.AgBarSeriesLabelOptions;
 import com.jwebmp.plugins.agchartsenterprise.options.series.AgRadialColumnSeriesOptions;
 import io.smallrye.mutiny.Uni;

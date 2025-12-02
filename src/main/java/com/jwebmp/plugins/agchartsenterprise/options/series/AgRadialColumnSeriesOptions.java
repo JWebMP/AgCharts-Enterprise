@@ -221,7 +221,6 @@ public class AgRadialColumnSeriesOptions<J extends AgRadialColumnSeriesOptions<J
     public @org.jspecify.annotations.NonNull J setId(String id)
     {
         this.id = id;
-        setSeriesId(id);
         return (J) this;
     }
 

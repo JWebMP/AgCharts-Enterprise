@@ -83,7 +83,7 @@ public class AgHeatmapSeriesOptions<J extends AgHeatmapSeriesOptions<J>> extends
     public @org.jspecify.annotations.NonNull J setColorRange(List<String> colorRange) {this.colorRange = colorRange;return (J) this;}
 
     public String getId() {return id;}
-    public @org.jspecify.annotations.NonNull J setId(String id) {this.id = id; setSeriesId(id); return (J) this;}
+    public @org.jspecify.annotations.NonNull J setId(String id) {this.id = id; return (J) this;}
 
     public Object getContext() {return context;}
     public @org.jspecify.annotations.NonNull J setContext(Object context) {this.context = context;return (J) this;}
