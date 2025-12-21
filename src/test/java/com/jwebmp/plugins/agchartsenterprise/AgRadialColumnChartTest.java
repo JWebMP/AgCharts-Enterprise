@@ -1,5 +1,7 @@
 package com.jwebmp.plugins.agchartsenterprise;
 
+import com.jwebmp.core.base.ajax.AjaxCall;
+import com.jwebmp.core.base.ajax.AjaxResponse;
 import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 import com.jwebmp.plugins.agcharts.options.AgChartOptions;
 import com.jwebmp.plugins.agchartsenterprise.options.axes.AgAxisLabelOrientation;
@@ -32,7 +34,7 @@ public class AgRadialColumnChartTest
     public void testMinimalOptionsSerialization()
     {
         AgRadialColumnChart<?> chart = new AgRadialColumnChart<>("rc1", "quarter", "software");
-        AgChartOptions<?> options = chart.getInitialOptions().await().indefinitely();
+        AgChartOptions<?> options = chart.getInitialOptions(new AjaxCall<>(), new AjaxResponse<>()).await().indefinitely();
 
         // Use the built-in JSON writer facilities to serialise consistently with the library.
         String json = new JavaScriptPart<>().objectAsString(options);
@@ -72,7 +74,7 @@ public class AgRadialColumnChartTest
                 .setFillOpacity(0.6)
                 .setLegendItemName("Hardware");
 
-        AgChartOptions<?> options = chart.getInitialOptions().await().indefinitely();
+        AgChartOptions<?> options = chart.getInitialOptions(new AjaxCall<>(), new AjaxResponse<>()).await().indefinitely();
         String json = new JavaScriptPart<>().objectAsString(options);
 
         // Axes presence

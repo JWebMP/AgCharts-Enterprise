@@ -302,7 +302,7 @@ public class AgOhlcChart<J extends AgOhlcChart<J>> extends AgChart<J>
     }
 
     @Override
-    public Uni<AgChartOptions<?>> getInitialOptions()
+    public Uni<AgChartOptions<?>> getInitialOptions(com.jwebmp.core.base.ajax.AjaxCall<?> call, com.jwebmp.core.base.ajax.AjaxResponse<?> response)
     {
         return Uni.createFrom().item(() -> {
             // Build OHLC series with configured properties

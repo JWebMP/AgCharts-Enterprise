@@ -221,7 +221,7 @@ public class AgRadialColumnChart<J extends AgRadialColumnChart<J>> extends AgCha
     }
 
     @Override
-    public Uni<AgChartOptions<?>> getInitialOptions()
+    public Uni<AgChartOptions<?>> getInitialOptions(com.jwebmp.core.base.ajax.AjaxCall<?> call, com.jwebmp.core.base.ajax.AjaxResponse<?> response)
     {
         return Uni.createFrom().item(() -> {
             // Build axes

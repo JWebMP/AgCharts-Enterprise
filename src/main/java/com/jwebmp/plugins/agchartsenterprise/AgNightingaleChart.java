@@ -264,7 +264,7 @@ public class AgNightingaleChart<J extends AgNightingaleChart<J>> extends AgChart
     }
 
     @Override
-    public Uni<AgChartOptions<?>> getInitialOptions()
+    public Uni<AgChartOptions<?>> getInitialOptions(com.jwebmp.core.base.ajax.AjaxCall<?> call, com.jwebmp.core.base.ajax.AjaxResponse<?> response)
     {
         return Uni.createFrom().item(() -> {
             // Build nightingale series with configured properties

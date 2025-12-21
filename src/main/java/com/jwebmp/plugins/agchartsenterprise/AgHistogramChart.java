@@ -87,7 +87,7 @@ public class AgHistogramChart extends AgChart<AgHistogramChart>
      * @return a Uni emitting the configured AgChartOptions for this histogram chart
      */
     @Override
-    public Uni<AgChartOptions<?>> getInitialOptions()
+    public Uni<AgChartOptions<?>> getInitialOptions(com.jwebmp.core.base.ajax.AjaxCall<?> call, com.jwebmp.core.base.ajax.AjaxResponse<?> response)
     {
         return Uni.createFrom().item(() -> {
             AgChartOptions<?> opts = new AgChartOptions<>();

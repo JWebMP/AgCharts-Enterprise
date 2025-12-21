@@ -119,7 +119,7 @@ public class AgFunnelChart<J extends AgFunnelChart<J>> extends AgChart<J>
     }
 
     @Override
-    public Uni<AgChartOptions<?>> getInitialOptions()
+    public Uni<AgChartOptions<?>> getInitialOptions(com.jwebmp.core.base.ajax.AjaxCall<?> call, com.jwebmp.core.base.ajax.AjaxResponse<?> response)
     {
         return Uni.createFrom().item(() -> {
             AgFunnelSeriesOptions<?> series = new AgFunnelSeriesOptions<>()

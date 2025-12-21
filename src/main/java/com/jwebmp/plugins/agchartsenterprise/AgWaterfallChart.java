@@ -1,5 +1,7 @@
 package com.jwebmp.plugins.agchartsenterprise;
 
+import com.jwebmp.core.base.ajax.AjaxCall;
+import com.jwebmp.core.base.ajax.AjaxResponse;
 import com.jwebmp.plugins.agcharts.AgChart;
 import com.jwebmp.plugins.agcharts.options.AgChartOptions;
 import com.jwebmp.plugins.agchartsenterprise.options.AgFinancialChartOptions;
@@ -86,7 +88,7 @@ public class AgWaterfallChart extends AgChart<AgWaterfallChart>
      * @return a Uni emitting the configured AgChartOptions for this waterfall chart
      */
     @Override
-    public Uni<AgChartOptions<?>> getInitialOptions()
+    public Uni<AgChartOptions<?>> getInitialOptions(AjaxCall<?> call, AjaxResponse<?> response)
     {
         return Uni.createFrom().item(() -> {
             AgChartOptions<?> opts = new AgChartOptions<>();
