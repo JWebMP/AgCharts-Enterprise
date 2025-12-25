@@ -2,6 +2,7 @@ package com.jwebmp.plugins.agchartsenterprise;
 
 import com.jwebmp.plugins.agcharts.AgChart;
 import com.jwebmp.plugins.agcharts.options.AgChartOptions;
+import com.jwebmp.plugins.agcharts.options.axes.AgAxesOptions;
 import com.jwebmp.plugins.agchartsenterprise.options.axes.AgAngleCategoryAxisOptions;
 import com.jwebmp.plugins.agchartsenterprise.options.axes.AgPolarAxisLabelOptions;
 import com.jwebmp.plugins.agchartsenterprise.options.axes.AgAxisLabelOrientation;
@@ -256,9 +257,9 @@ public class AgRadialColumnChart<J extends AgRadialColumnChart<J>> extends AgCha
                 radiusAxis.setLabel(l);
             }
 
-            List<com.jwebmp.plugins.agcharts.options.axes.AgAxisBaseOptions<?>> axes = new ArrayList<>();
-            axes.add(angleAxis);
-            axes.add(radiusAxis);
+            AgAxesOptions<?> axes = new AgAxesOptions<>();
+            axes.setAngle(angleAxis);
+            axes.setRadius(radiusAxis);
 
             // Build series
             AgRadialColumnSeriesOptions<?> series = new AgRadialColumnSeriesOptions<>()
