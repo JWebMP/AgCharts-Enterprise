@@ -15,6 +15,7 @@ import com.jwebmp.core.base.angular.client.annotations.structures.NgMethod;
 import com.jwebmp.core.base.angular.client.services.EventBusService;
 import com.jwebmp.core.base.angular.client.services.interfaces.AnnotationUtils;
 import com.jwebmp.core.base.angular.client.services.interfaces.INgComponent;
+import com.jwebmp.core.base.angular.components.NgIf;
 import com.jwebmp.core.base.angular.implementations.WebSocketAbstractCallReceiver;
 import com.jwebmp.core.base.html.DivSimple;
 import com.jwebmp.plugins.agchartsenterprise.options.gauge.AgRadialGaugeOptions;
@@ -75,6 +76,8 @@ import java.util.List;
 @NgOnDestroy("this.subscriptionOptions?.unsubscribe(); this.eventBusService.unregisterListener(this.listenerName + 'Options', this.handlerId);")
 public abstract class AgGauge<J extends AgGauge<J>> extends DivSimple<J> implements INgComponent<J>
 {
+    private NgIf ngIfWrapper;
+
     public AgGauge() {super();}
 
     public AgGauge(String id)
@@ -82,11 +85,27 @@ public abstract class AgGauge<J extends AgGauge<J>> extends DivSimple<J> impleme
         setID(id);
         setTag("ag-gauge");
         addAttribute("[options]", "gaugeOptions()");
-        addAttribute("*ngIf", "gaugeConfiguration() && gaugeOptions()");
+        ngIfWrapper = new NgIf("gaugeConfiguration() && gaugeOptions()");
 
         addConfiguration(AnnotationUtils.getNgField("readonly listenerName = '" + getID() + "';",false,true));
         addConfiguration(AnnotationUtils.getNgField("readonly clazzName = '" + getClass().getCanonicalName() + "';",false,true));
         registerWebSocketListeners();
+    }
+
+    @Override
+    protected StringBuilder renderHTML(int tabCount)
+    {
+        if (ngIfWrapper != null)
+        {
+            NgIf wrapper = ngIfWrapper;
+            ngIfWrapper = null;
+            wrapper.add(this);
+            StringBuilder result = new StringBuilder(wrapper.toString(tabCount));
+            wrapper.getChildren().clear();
+            ngIfWrapper = wrapper;
+            return result;
+        }
+        return super.renderHTML(tabCount);
     }
 
     /**
