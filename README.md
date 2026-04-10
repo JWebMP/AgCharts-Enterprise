@@ -15,9 +15,9 @@
 
 Enterprise charting extension for JWebMP adding advanced chart types, specialized visualizations, and financial charts. Extends the community AG Charts plugin with gauges, heatmaps, polar charts, hierarchical visualizations, and financial instruments.
 
-Built on [AG Charts Enterprise 13.1.0](https://charts.ag-grid.com/javascript/license/) · [Angular 20](https://angular.dev/) · [JWebMP AG Charts](../agcharts/) · JPMS module `com.jwebmp.plugins.agchartsenterprise` · Java 25+
+Built on [AG Charts Enterprise 13.1.0](https://charts.ag-grid.com/javascript/license/) · [Angular 21](https://angular.dev/) · [JWebMP AG Charts](../agcharts/) · JPMS module `com.jwebmp.plugins.agchartsenterprise` · Java 25+
 
-**Version: 13.1.0** — Enterprise-only chart types with CRTP fluent API and Angular 20 integration.
+**Version: 13.1.0** — Enterprise-only chart types with CRTP fluent API and Angular 21 integration.
 
 ## 📦 Installation
 
@@ -25,7 +25,7 @@ Built on [AG Charts Enterprise 13.1.0](https://charts.ag-grid.com/javascript/lic
 <dependency>
   <groupId>com.jwebmp.plugins</groupId>
   <artifactId>agcharts-enterprise</artifactId>
-  <version>2.0.0-SNAPSHOT</version>
+  <version>2.0.0-RC1</version>
 </dependency>
 ```
 
@@ -33,7 +33,7 @@ Built on [AG Charts Enterprise 13.1.0](https://charts.ag-grid.com/javascript/lic
 <summary>Gradle (Kotlin DSL)</summary>
 
 ```kotlin
-implementation("com.jwebmp.plugins:agcharts-enterprise:2.0.0-SNAPSHOT")
+implementation("com.jwebmp.plugins:agcharts-enterprise:2.0.0-RC1")
 ```
 </details>
 
@@ -78,7 +78,7 @@ The plugin automatically includes AG Charts Enterprise dependencies:
 ### Core Features
 
 - **CRTP Fluent Builders** — Type-safe, self-referencing fluent API for all enterprise options
-- **Angular 20 Integration** — Seamless integration via JWebMP component annotations
+- **Angular 21 Integration** — Seamless integration via JWebMP component annotations
 - **TypeScript Generation** — Automatic type generation from Java models
 - **Reactive Data Binding** — Real-time chart updates with Angular observables
 - **Server-Side Configuration** — Define charts in Java with client-side rendering
@@ -252,4 +252,4 @@ com.jwebmp.plugins.agchartsenterprise
 
 **JWebMP AG Charts Enterprise** — Advanced charting for enterprise Java applications.
 
-Built with ❤️ using Java 25+, AG Charts Enterprise 13.1.0, Angular 20, and JPMS.
+Built with ❤️ using Java 25+, AG Charts Enterprise 13.1.0, Angular 21, and JPMS.
