@@ -2,6 +2,10 @@ name: AG Charts
 on:
   workflow_dispatch:
   push:
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   AGChartsEnterprise:
     uses: GuicedEE/Workflows/.github/workflows/projects.yml@master
