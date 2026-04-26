@@ -25,7 +25,7 @@ Built on [AG Charts Enterprise 13.1.0](https://charts.ag-grid.com/javascript/lic
 <dependency>
   <groupId>com.jwebmp.plugins</groupId>
   <artifactId>agcharts-enterprise</artifactId>
-  <version>2.0.0-RC9</version>
+  <version>2.0.0-RC10</version>
 </dependency>
 ```
 
@@ -33,7 +33,7 @@ Built on [AG Charts Enterprise 13.1.0](https://charts.ag-grid.com/javascript/lic
 <summary>Gradle (Kotlin DSL)</summary>
 
 ```kotlin
-implementation("com.jwebmp.plugins:agcharts-enterprise:2.0.0-RC9")
+implementation("com.jwebmp.plugins:agcharts-enterprise:2.0.0-RC10")
 ```
 </details>
 
