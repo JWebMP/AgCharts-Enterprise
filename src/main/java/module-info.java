@@ -15,16 +15,16 @@ module com.jwebmp.plugins.agchartsenterprise {
     requires com.jwebmp.core;
     requires com.jwebmp.core.angular;
     requires com.guicedee.guicedinjection;
-    requires com.fasterxml.jackson.databind;
+    requires tools.jackson.databind;
     requires static lombok;
 
     provides IPageConfigurator with AgChartsEnterprisePageConfigurator;
     provides IGuiceScanModuleInclusions with AgChartsEnterpriseModuleScanInclusion;
 
-    opens com.jwebmp.plugins.agchartsenterprise to com.google.guice, com.fasterxml.jackson.databind, com.jwebmp.core;
+    opens com.jwebmp.plugins.agchartsenterprise to com.google.guice, tools.jackson.databind, com.jwebmp.core;
     opens com.jwebmp.plugins.agchartsenterprise.implementations to com.google.guice;
-    opens com.jwebmp.plugins.agchartsenterprise.options.gauge to com.google.guice, com.fasterxml.jackson.databind, com.jwebmp.core;
-    opens com.jwebmp.plugins.agchartsenterprise.options.axes to com.google.guice, com.fasterxml.jackson.databind, com.jwebmp.core;
-    opens com.jwebmp.plugins.agchartsenterprise.options.series to com.google.guice, com.fasterxml.jackson.databind, com.jwebmp.core;
+    opens com.jwebmp.plugins.agchartsenterprise.options.gauge to com.google.guice, tools.jackson.databind, com.jwebmp.core;
+    opens com.jwebmp.plugins.agchartsenterprise.options.axes to com.google.guice, tools.jackson.databind, com.jwebmp.core;
+    opens com.jwebmp.plugins.agchartsenterprise.options.series to com.google.guice, tools.jackson.databind, com.jwebmp.core;
 
 }
